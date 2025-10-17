@@ -48,4 +48,4 @@ L’interface graphique en **WinForms** rend l’usage intuitif et adapté à un
 
 ### 3. Lancer l'application 
 ```path
-'SAE24-MARTIN-Josue_SCHNIDER--SYLVESTRE-Martin_AKGUL-Illian\SAE A21-D21 - Projet Caserne\bin\Debug\SAE A21-D21 - Projet Caserne.exe'
+'SAE A21-D21 - Projet Caserne\bin\Debug\SAE A21-D21 - Projet Caserne.exe'
