@@ -45,5 +45,7 @@ L’interface graphique en **WinForms** rend l’usage intuitif et adapté à un
 - Visual Studio (avec le workload `.NET desktop development`)  
 
 ### 2. Cloner le dépôt
-```bash
-git clone https://github.com/Suly-ms/Projet-Gestion-Caserne.git
+
+### 3. Lancer l'application 
+```path
+'SAE24-MARTIN-Josue_SCHNIDER--SYLVESTRE-Martin_AKGUL-Illian\SAE A21-D21 - Projet Caserne\bin\Debug\SAE A21-D21 - Projet Caserne.exe'
