@@ -34,7 +34,16 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>fire-helmets-icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.4.0\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
@@ -49,20 +58,187 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UserControlChoixPompier, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\UserControlChoixPompier.dll</HintPath>
+    </Reference>
+    <Reference Include="UserControlChoixVehicules, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\UserControlChoixVehicules.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connexion.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="FrmChoixVehiculesPompier.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FrmChoixVehiculesPompier.Designer.cs">
+      <DependentUpon>FrmChoixVehiculesPompier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChoixVehiculesPompierAutomatique.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChoixVehiculesPompierAutomatique.Designer.cs">
+      <DependentUpon>FrmChoixVehiculesPompierAutomatique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionNouvelleMission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionNouvelleMission.Designer.cs">
+      <DependentUpon>FrmGestionNouvelleMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmStatistiques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmStatistiques.Designer.cs">
+      <DependentUpon>FrmStatistiques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParcoursEquipements.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmParcoursEquipements.Designer.cs">
+      <DependentUpon>FrmParcoursEquipements.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCompteRendu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCompteRendu.Designer.cs">
+      <DependentUpon>FrmCompteRendu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConnexionAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConnexionAdmin.Designer.cs">
+      <DependentUpon>FrmConnexionAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCreerPompier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCreerPompier.Designer.cs">
+      <DependentUpon>FrmCreerPompier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDommageEngin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDommageEngin.Designer.cs">
+      <DependentUpon>FrmDommageEngin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGestionPompiers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGestionPompiers.Designer.cs">
+      <DependentUpon>FrmGestionPompiers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHabilitations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHabilitations.Designer.cs">
+      <DependentUpon>FrmHabilitations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTableauBord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTableauBord.Designer.cs">
+      <DependentUpon>FrmTableauBord.cs</DependentUpon>
     </Compile>
     <Compile Include="mesDatas.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UC_AffichageEngin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AffichageEngin.Designer.cs">
+      <DependentUpon>UC_AffichageEngin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_AffichagePompier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_AffichagePompier.Designer.cs">
+      <DependentUpon>UC_AffichagePompier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ChoixPompier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ChoixPompier.Designer.cs">
+      <DependentUpon>UC_ChoixPompier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ChoixPompierAutomatique.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ChoixPompierAutomatique.Designer.cs">
+      <DependentUpon>UC_ChoixPompierAutomatique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ChoixVehicule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ChoixVehicule.Designer.cs">
+      <DependentUpon>UC_ChoixVehicule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_ChoixVehiculeAutomatique.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_ChoixVehiculeAutomatique.Designer.cs">
+      <DependentUpon>UC_ChoixVehiculeAutomatique.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_CreerPompier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_CreerPompier.Designer.cs">
+      <DependentUpon>UC_CreerPompier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_Habilitation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Habilitation.Designer.cs">
+      <DependentUpon>UC_Habilitation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_RecapMission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_RecapMission.Designer.cs">
+      <DependentUpon>UC_RecapMission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC_DoubleBoutonImage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_DoubleBoutonImage.Designer.cs">
+      <DependentUpon>UC_DoubleBoutonImage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmChoixVehiculesPompier.resx">
+      <DependentUpon>FrmChoixVehiculesPompier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChoixVehiculesPompierAutomatique.resx">
+      <DependentUpon>FrmChoixVehiculesPompierAutomatique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionNouvelleMission.resx">
+      <DependentUpon>FrmGestionNouvelleMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmStatistiques.resx">
+      <DependentUpon>FrmStatistiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmParcoursEquipements.resx">
+      <DependentUpon>FrmParcoursEquipements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCompteRendu.resx">
+      <DependentUpon>FrmCompteRendu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConnexionAdmin.resx">
+      <DependentUpon>FrmConnexionAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCreerPompier.resx">
+      <DependentUpon>FrmCreerPompier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDommageEngin.resx">
+      <DependentUpon>FrmDommageEngin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGestionPompiers.resx">
+      <DependentUpon>FrmGestionPompiers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHabilitations.resx">
+      <DependentUpon>FrmHabilitations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTableauBord.resx">
+      <DependentUpon>FrmTableauBord.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -73,6 +249,36 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UC_AffichageEngin.resx">
+      <DependentUpon>UC_AffichageEngin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_AffichagePompier.resx">
+      <DependentUpon>UC_AffichagePompier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ChoixPompier.resx">
+      <DependentUpon>UC_ChoixPompier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ChoixPompierAutomatique.resx">
+      <DependentUpon>UC_ChoixPompierAutomatique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ChoixVehicule.resx">
+      <DependentUpon>UC_ChoixVehicule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_ChoixVehiculeAutomatique.resx">
+      <DependentUpon>UC_ChoixVehiculeAutomatique.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_CreerPompier.resx">
+      <DependentUpon>UC_CreerPompier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Habilitation.resx">
+      <DependentUpon>UC_Habilitation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_RecapMission.resx">
+      <DependentUpon>UC_RecapMission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_DoubleBoutonImage.resx">
+      <DependentUpon>UC_DoubleBoutonImage.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -86,6 +292,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fire-helmets-icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets" Condition="Exists('..\packages\Stub.System.Data.SQLite.Core.NetFramework.1.0.119.0\build\net46\Stub.System.Data.SQLite.Core.NetFramework.targets')" />
