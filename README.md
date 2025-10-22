@@ -25,6 +25,7 @@ L’interface graphique en **WinForms** rend l’usage intuitif et adapté à un
 - 🧾 **Sélection automatique** des pompiers et véhicules selon les habilitations requises
 - 🔍 **Recherche et filtrage** dans les listes
 - 💾 **Sauvegarde des données** via un `DataSet` local (mode déconnecté) ainsi qu'à une `base de données` (mode connecté)
+- 🖨 **Generation des comptes rendus** dans le dossier `compte_rendu` lorsque le bouton de génération est cliqué dans l'application
 
 ---
 
@@ -41,7 +42,9 @@ L’interface graphique en **WinForms** rend l’usage intuitif et adapté à un
 ## ⚙️ Installation & configuration
 
 ### 1. Prérequis
-- Windows  
+- Windows
+
+Si vous voulez éditer le projet : 
 - Visual Studio (avec le workload `.NET desktop development`)  
 
 ### 2. Cloner le dépôt
