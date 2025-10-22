@@ -24,7 +24,7 @@ L’interface graphique en **WinForms** rend l’usage intuitif et adapté à un
 - ⚠️ **Gestion des interventions** : type, localisation, ressources nécessaires
 - 🧾 **Sélection automatique** des pompiers et véhicules selon les habilitations requises
 - 🔍 **Recherche et filtrage** dans les listes
-- 💾 **Sauvegarde des données** via un `DataSet` local
+- 💾 **Sauvegarde des données** via un `DataSet` local (mode déconnecté) ainsi qu'à une `base de données` (mode connecté)
 
 ---
 
