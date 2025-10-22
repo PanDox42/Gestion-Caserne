@@ -33,7 +33,7 @@ L’interface graphique en **WinForms** rend l’usage intuitif et adapté à un
 
 - **Langage :** C#  
 - **Framework :** .NET (Windows Forms)  
-- **Données :** `DataSet` et fichiers XML  
+- **Données :** `DataSet`, fichiers XML et base de données en `.db` 
 - **IDE recommandé :** Visual Studio  
 - **Patrons utilisés :** séparation entre couches UI / logique / données  
 
